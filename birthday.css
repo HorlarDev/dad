@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .pad{
+        padding: 10px;
+    }
+    .def h1{
+        margin-top: 180px;
+        width: 390px;
+        animation-name: myani;
+        animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    transition-property: transform;
+    transition-duration: 1s;
+        
+    }
+    @keyframes myani{
+        0%{opacity: 1}
+        100%{opacity: 0}
+    }
+    .turn{
+       margin-left: 110px;
+       animation-name: btn;
+        animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    }
+    .btn{
+       padding:600px;
+        margin-left: 70px;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: white 1px solid;
+        margin-top: 40px;
+        opacity: 1;
+        animation-name:btn;
+        animation-duration: 3s;
+        animation-delay: 7s;
+        animation-fill-mode: forwards;
+    
+        transition-property: transform;
+        transition-duration: 5s;
+    }
+    @keyframes  btn{
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+
+.hh h1{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    animation-name:birthday;
+    animation-duration: 3s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+@keyframes  birthday{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+}
+
+.dark-mode{
+    background-color: white;
+    color:black;
+}
